@@ -59,6 +59,7 @@ const AddInitialFunds = () => {
               type="text"
               placeholder="Enter account number"
               value={account}
+              required
             />
           </div>
 
@@ -75,6 +76,7 @@ const AddInitialFunds = () => {
               type="number"
               value={amount}
               placeholder="Enter initial amount"
+              required
             />
 
             <label className="text-sm font-semibold text-gray-700">
@@ -89,6 +91,7 @@ const AddInitialFunds = () => {
               type="password"
               value={transactionPassword}
               placeholder="Enter transaction password"
+              required
             />
           </div>
 

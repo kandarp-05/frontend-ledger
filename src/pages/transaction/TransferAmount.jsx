@@ -63,6 +63,7 @@ const TransferAmount = () => {
               placeholder="Enter your account number"
               type="text"
               value={fromAccount}
+              required
             />
           </div>
 
@@ -79,6 +80,7 @@ const TransferAmount = () => {
               placeholder="Enter recipient account number"
               type="text"
               value={toAccount}
+              required
             />
           </div>
 
@@ -95,6 +97,7 @@ const TransferAmount = () => {
               placeholder="Enter transfer amount"
               type="number"
               value={amount}
+              required
             />
           </div>
 

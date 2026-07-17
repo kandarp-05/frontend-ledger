@@ -20,7 +20,7 @@ const AccountHeader = () => {
       <div className="flex items-center gap-2 bg-cyan-700 hover:bg-cyan-800 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition duration-200 cursor-pointer active:scale-95">
         <Plus className="h-5 w-5" />
         <button onClick={()=>{
-            navigate('/create-account')
+            navigate('/create-account');
         }}>
           Create Account
         </button>

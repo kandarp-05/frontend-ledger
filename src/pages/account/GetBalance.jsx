@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import api from "../api/axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const GetBalance = () => {
   const [accountNumber, setAccountNumber] = useState("");
   const [balance, setBalance] = useState("");
+  const navigate=useNavigate();
   async function fetchBalance() {
     const response = await api.get(`/accounts/balance/${accountNumber}`);
     setBalance(await response?.data?.balance);

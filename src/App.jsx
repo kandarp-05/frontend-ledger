@@ -15,7 +15,6 @@ import ForgotTransactionPassword from "./pages/account/ForgotTransactionPassword
 import ChangeTransactionPassword from "./pages/account/ChangeTransactionPassword";
 import GetBalance from "./pages/account/GetBalance";
 import ResetPassword from "./pages/account/ResetPassword";
-import PublicRoute from "./routes/PublicRoute";
 import SystemProtectedRoute from "./routes/SystemProtectedRoute";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import { Toaster } from "react-hot-toast";
@@ -28,25 +27,19 @@ const App = () => {
         <Route
           path="/login"
           element={
-            <PublicRoute>
               <Login />
-            </PublicRoute>
           }
         />
         <Route
           path="/register"
           element={
-            <PublicRoute>
               <Register />
-            </PublicRoute>
           }
         />
         <Route
           path="/forgot-password"
           element={
-            <PublicRoute>
               <ForgotPassword />
-            </PublicRoute>
           }
         />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
