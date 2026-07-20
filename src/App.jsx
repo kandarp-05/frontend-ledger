@@ -17,6 +17,7 @@ import GetBalance from "./pages/account/GetBalance";
 import ResetPassword from "./pages/account/ResetPassword";
 import SystemProtectedRoute from "./routes/SystemProtectedRoute";
 import ProtectedRoute from "./routes/ProtectedRoute";
+import PublicRoute from "./routes/PublicRoute"
 import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
@@ -27,7 +28,9 @@ const App = () => {
         <Route
           path="/login"
           element={
-              <Login />
+          <PublicRoute>
+            <Login />
+            </PublicRoute>     
           }
         />
         <Route

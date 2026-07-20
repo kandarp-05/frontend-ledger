@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const api = axios.create({
-    baseURL: "https://backend-ledger-1twm.onrender.com/api",
+    baseURL: "http://localhost:8000/api",
     withCredentials: true,
 });
 
@@ -17,4 +17,5 @@ api.interceptors.response.use(
         return Promise.reject(error);
     }
 );
+
 export default api;
